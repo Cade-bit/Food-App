@@ -1,0 +1,11 @@
+{% extends 'food/base.html' %}
+{% block title %}Logout - FoodApp{% endblock %}
+
+    {% block body %}
+    <div class="container position-absolute top-50 start-50 translate-middle">
+        <p>You have been logged out successfully.</p>
+        <a href="{% url 'login' %}" class="btn btn-primary" role="button">Login</a> 
+        <a href="{% url 'register' %}" class="btn btn-secondary" role="button">Register</a>
+    </div>
+    {% endblock %}
+    

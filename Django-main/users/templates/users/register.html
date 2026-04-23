@@ -1,0 +1,24 @@
+{% extends 'food/base.html' %}
+{% block title %}Register{% endblock %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block body %}
+    <div class="position-absolute top-50 start-50 translate-middle">
+        <form method="POST">
+        {% csrf_token %}
+        {{ form }}
+        <button class="btn btn-primary" type="submit">Signup</button>
+        <a href="{% url 'login' %}" class="btn btn-secondary" role="button">Login</a>
+    </form>
+    </div>
+    {%endblock%}
+</body>
+</html>

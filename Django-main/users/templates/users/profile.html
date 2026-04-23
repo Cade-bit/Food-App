@@ -1,0 +1,12 @@
+{% extends 'food/base.html' %}
+{% block title %}Profile - FoodApp{% endblock %}
+
+    {% block body %}
+    <h1>{{ user.username }}</h1>
+    {% if user.profile.image and user.profile.image.url != "/pictures/profilepic.jpg" %}
+    <img src="{{ user.profile.image.url }}" alt="Profile Image" class="img-fluid rounded-circle custom-profile-image">
+    {% else %}
+    <i class="bi bi-person-circle" style="font-size:100px;"></i></i>
+    {% endif %}
+    <h2>{{ user.profile.location }}</h2>
+    {% endblock %}

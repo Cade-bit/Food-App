@@ -1,0 +1,321 @@
+[
+{
+    "model": "food.item",
+    "pk": 1,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Pizza",
+        "item_description": "Cheesy Pizza",
+        "item_price": "20.00",
+        "item_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIibPbOeDQQscm9g-fDNdCvROokQJukg8nYQ&s"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 2,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Burger",
+        "item_description": "Cheesy Burger",
+        "item_price": "10.00",
+        "item_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZDW-eUQzyd6cb21IAWwZUsmV0XK3BALY13Q&s"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 3,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Burrito",
+        "item_description": "High calorie burrito",
+        "item_price": "15.50",
+        "item_image": "https://theeburgerdude.com/wp-content/uploads/2022/12/Chiopotle-Blog-03-1024x576.jpg"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 4,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Cheese Burger",
+        "item_description": "This is a burger",
+        "item_price": "8.00",
+        "item_image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFExWftHhBK07UkiHZykqbo1RFUZEa2ecFgg&s"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 8,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Salad",
+        "item_description": "Zesty Salad",
+        "item_price": "30.35",
+        "item_image": "https://i2.wp.com/www.downshiftology.com/wp-content/uploads/2019/04/Cobb-Salad-main.jpg"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 9,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Hot Dog",
+        "item_description": "Long Hot Dog",
+        "item_price": "10.25",
+        "item_image": "https://www.allrecipes.com/thmb/nk0oa_NelH_k7GPqCGrMTqj8g7M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/238509-coney-island-dogs-ddmfs-3x4_9476-b80e723764d3437e8fa7fd89f010432a.jpg"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 12,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Caviar",
+        "item_description": "Fish eggs",
+        "item_price": "300.00",
+        "item_image": "https://www.yummymummykitchen.com/wp-content/uploads/2021/12/caviar-1-1-720x540.jpg"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 13,
+    "fields": {
+        "user_name": 6,
+        "item_name": "Pasta",
+        "item_description": "Italian pasta",
+        "item_price": "15.00",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 14,
+    "fields": {
+        "user_name": 8,
+        "item_name": "Breakfast",
+        "item_description": "English Breakfast",
+        "item_price": "20.00",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 15,
+    "fields": {
+        "user_name": 11,
+        "item_name": "testingitem",
+        "item_description": "testingdescription",
+        "item_price": "44.59",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 16,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Margherita Pizza",
+        "item_description": "Classic Italian pizza with mozzarella and tomato",
+        "item_price": "8.99",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 17,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Cheeseburger",
+        "item_description": "Beef patty with cheese, lettuce and tomato",
+        "item_price": "6.49",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 18,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Chicken Tacos",
+        "item_description": "Soft tortillas with grilled chicken and salsa",
+        "item_price": "7.29",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 19,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Sushi Platter",
+        "item_description": "Assorted rolls with tuna, salmon and avocado",
+        "item_price": "12.99",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 20,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Pasta Alfredo",
+        "item_description": "Creamy white sauce pasta with mushrooms",
+        "item_price": "9.49",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 21,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Falafel Wrap",
+        "item_description": "Middle Eastern wrap with chickpea patties",
+        "item_price": "6.99",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 22,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Pad Thai",
+        "item_description": "Thai stir-fried noodles with peanuts and veggies",
+        "item_price": "10.49",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 23,
+    "fields": {
+        "user_name": 1,
+        "item_name": "French Fries",
+        "item_description": "Crispy golden potato fries with salt",
+        "item_price": "3.49",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 24,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Veggie Burger",
+        "item_description": "Plant-based patty with lettuce and tomato",
+        "item_price": "6.29",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 25,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Butter Chicken",
+        "item_description": "Indian-style chicken in creamy tomato sauce",
+        "item_price": "11.49",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 26,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Ramen Bowl",
+        "item_description": "Japanese noodle soup with egg and pork",
+        "item_price": "10.99",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 27,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Greek Salad",
+        "item_description": "Feta cheese, olives, cucumber and tomatoes",
+        "item_price": "7.99",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 28,
+    "fields": {
+        "user_name": 1,
+        "item_name": "BBQ Ribs",
+        "item_description": "Slow cooked pork ribs with barbecue sauce",
+        "item_price": "14.99",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 29,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Shawarma",
+        "item_description": "Grilled meat wrap with garlic sauce",
+        "item_price": "8.49",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 30,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Pancakes",
+        "item_description": "Stack of fluffy pancakes with maple syrup",
+        "item_price": "5.79",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 31,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Mutton Biryani",
+        "item_description": "Fragrant rice with spiced mutton",
+        "item_price": "12.29",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 32,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Spring Rolls",
+        "item_description": "Crispy rolls stuffed with vegetables",
+        "item_price": "4.99",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 33,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Fish and Chips",
+        "item_description": "British-style fried fish with fries",
+        "item_price": "9.99",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+},
+{
+    "model": "food.item",
+    "pk": 34,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Ice Cream Sundae",
+        "item_description": "Vanilla ice cream topped with chocolate sauce",
+        "item_price": "4.59",
+        "item_image": "https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png"
+    }
+}
+]

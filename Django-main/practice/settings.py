@@ -34,6 +34,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'rest_framework',
     'users.apps.UsersConfig',
     'food.apps.FoodConfig',
     'django.contrib.admin',
@@ -45,6 +46,9 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'food.middleware.BlockIPMiddleware',
+    'food.middleware.LogRequestMiddleware',
+    'food.middleware.ResponseTimeMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

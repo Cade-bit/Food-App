@@ -1,12 +1,23 @@
+from django.db.migrations import serializer
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
+from rest_framework import status
+
 from .models import Item
 from django.template import loader
 from .forms import ItemForm
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView
+from django.http import JsonResponse
+from .serializers import ItemSerializer, BulkDeleteSerializer
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
+from rest_framework.views import APIView
+from rest_framework import generics
+
 
 # Create your views here.
 #----------------------------> Creating view for index page
@@ -16,6 +27,87 @@ from django.views.generic.edit import CreateView
         'item_list': item_list,
     }
     return render(request, 'food/index.html', context)'''
+
+class ItemRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Item.objects.all()
+    serializer_class = ItemSerializer
+
+class ItemListCreateAPI(generics.ListCreateAPIView):
+    queryset = Item.objects.all()
+    serializer_class = ItemSerializer
+
+
+# class ItemListAPIView(APIView):
+#     def get(self, request):
+#         items = Item.objects.all()
+#         serializer = ItemSerializer(items, many=True)
+#         return Response(serializer.data)
+#     def post(self, request):
+#         serializer = ItemSerializer(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return Response(serializer.data)
+
+
+# class ItemDetailAPIView(APIView):
+#     def get_object(self, pk):
+#         try:
+#             return Item.objects.get(pk=pk)
+#         except Item.DoesNotExist:
+#             return None
+#     def get(self, request, pk):
+#         item = self.get_object(pk)
+#         if not item:
+#             return Response({"Error": "Item not found"})
+#         serializer = ItemSerializer(item)
+#         return Response(serializer.data)
+#     def put(self, request, pk):
+#         item = self.get_object(pk)
+#         if not item:
+#             return Response({"Error": "Item not found"})
+#         serializer = ItemSerializer(item, data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return Response(serializer.data)
+#     def delete(self, request, pk):
+#         item = self.get_object(pk)
+#         if not item:
+#             return Response({"Error": "Item not found"})
+#         item.delete()
+#         return Response({"message": "Item deleted"})
+
+
+
+# View and add items
+# @api_view(["GET", "POST"])
+# def item_list_api(request):
+#     if request.method == "GET":
+#         items = Item.objects.all()
+#         serializer = ItemSerializer(items, many=True)
+#         return Response(serializer.data)
+#     elif request.method == "POST":
+#         serializer = ItemSerializer(data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return Response(serializer.data)
+#
+#
+# @api_view(["GET", "PUT", "DELETE"])
+# def item_detail_api(request, pk):
+#     items = Item.objects.get(pk=pk)
+#     if request.method == "GET":
+#         serializer = ItemSerializer(items)
+#         return Response(serializer.data)
+#     elif request.method == "PUT":
+#         serializer = ItemSerializer(items, data=request.data)
+#         if serializer.is_valid():
+#             serializer.save()
+#             return Response(serializer.data)
+#     elif request.method == "DELETE":
+#         items.delete()
+#         return Response({"message": "Item deleted"})
+
+
 
 class IndexClassView(ListView):
     model = Item
@@ -38,18 +130,17 @@ class FoodDetail(DetailView):
     template_name = 'food/details.html'
 
 #------------------------> Add new item
-@login_required
-def create_item(request):
+'''def create_item(request):
     form = ItemForm(request.POST or None)
 
     if form.is_valid():
         form.save()
         return redirect('food:index')
 
-    return render(request, 'food/item-form.html', {'form':form})
+    return render(request, 'food/item-form.html', {'form':form})'''
 
 #---------------------> class based view for add items
-class CreateItem(CreateView):
+class CreateItem( LoginRequiredMixin, CreateView):
     model = Item
     fields = ['item_name', 'item_description', 'item_price', 'item_image']
     template_name = 'food/item-form.html'
@@ -61,23 +152,30 @@ class CreateItem(CreateView):
 
 
 #-------------------------> Update item
-def update_item(request, item_id):
-    item =Item.objects.get(id = item_id)
-    form = ItemForm(request.POST or None, instance = item)
+class UpdateItem(UpdateView):
+    model = Item
+    fields = ['item_name', 'item_description', 'item_price', 'item_image']
+    temple_name_suffix = '_update_form'
 
-    if form.is_valid():
-        form.save()
-        return redirect('food:index')
-
-    return render(request, 'food/item-form.html', {'form':form, 'item':item})
-
+    def get_queryset(self):
+        return Item.objects.filter(user_name = self.request.user)
 #------------------------------> Delete an item
 @login_required
 def delete_item(request, item_id):
     item = Item.objects.get(id=item_id)
 
-    if request.method == 'POST':
+    if request.method=="POST":
         item.delete()
         return redirect('food:index')
 
     return render(request, 'food/item-delete.html', {'item':item})
+
+
+def get_objcets(request):
+    for item in Item.objects.all():
+        print(item.item_name)
+
+def get_objects_optimised(request):
+    item = Item.objects.only('item_name')
+    for item in item:
+        print(item)

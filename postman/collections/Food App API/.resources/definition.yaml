@@ -1,0 +1,15 @@
+$kind: collection
+description: API collection for the Django Food App. Covers the DRF REST API for food items and the authentication/user endpoints.
+variables:
+  - key: base_url
+    value: http://127.0.0.1:8000
+    disabled: false
+  - key: item_id
+    value: "1"
+    disabled: false
+  - key: json_web_token_0xau
+    secret: true
+    disabled: false
+  - key: supabase_service_role_api_key_0m39
+    secret: true
+    disabled: false

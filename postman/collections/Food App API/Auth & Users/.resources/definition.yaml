@@ -1,0 +1,4 @@
+$kind: collection
+name: Auth & Users
+description: 'Endpoints for user registration, login, logout, and profile.'
+order: 2000

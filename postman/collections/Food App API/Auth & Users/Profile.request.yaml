@@ -1,0 +1,6 @@
+$kind: http-request
+name: Profile
+order: 4000
+method: GET
+url: '{{base_url}}/profile/'
+description: 'View the profile of the currently authenticated user. Requires login.'

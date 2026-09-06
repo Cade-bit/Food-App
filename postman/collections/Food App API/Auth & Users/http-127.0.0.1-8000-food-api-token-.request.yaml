@@ -1,0 +1,15 @@
+$kind: http-request
+name: http://127.0.0.1:8000/food/api/token/
+description: ""
+url: http://127.0.0.1:8000/food/api/token/
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\": \"newuser1\",\r
+
+    \    \"password\": \"testingnewuser\"\r
+
+    }"
+order: 2640392255178358

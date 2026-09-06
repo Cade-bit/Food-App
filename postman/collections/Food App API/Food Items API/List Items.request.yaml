@@ -1,0 +1,6 @@
+$kind: http-request
+name: List Items
+order: 1000
+method: GET
+url: "{{base_url}}/food/api/items/"
+description: Retrieve a list of all food items.

@@ -1,0 +1,6 @@
+$kind: http-request
+name: Retrieve Item
+order: 3000
+method: GET
+url: '{{base_url}}/food/api/items/{{item_id}}/'
+description: 'Retrieve a single food item by its ID.'

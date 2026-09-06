@@ -1,0 +1,23 @@
+$kind: http-request
+name: http://127.0.0.1:8000/food/api/items/
+description: ""
+url: http://127.0.0.1:8000/food/api/items/
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"item_name\": \"Burger JWT\",\r
+
+    \    \"item_description\": \" Double cheese burger\",\r
+
+    \    \"item_price\": \"150\",\r
+
+    \    \"item_image\":\"https://example.com/burger.png\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{supabase_service_role_api_key_0m39}}"
+order: 563892999689344

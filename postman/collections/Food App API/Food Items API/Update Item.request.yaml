@@ -1,0 +1,52 @@
+$kind: http-request
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0xau}}"
+order: 4000
+method: PUT
+url: "{{base_url}}/food/api/items/{{item_id}}/"
+description: Fully update a food item by its ID. Requires authentication.
+body:
+  type: json
+  content: |-
+    {
+      "item_name": "Burger edited",
+      "item_description": "An updated description",
+      "item_price": "11.99",
+      "item_image": "https://example.com/burger.jpg"
+    }
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Status code is 200 OK", function () {
+          pm.response.to.have.status(200);
+          
+      });
+
+      pm.test("Response is JSON", function () {
+          pm.response.to.be.json;
+      });
+
+      pm.test("Response contains updated item fields", function () {
+          const json = pm.response.json();
+          pm.expect(json).to.have.property("item_name");
+          pm.expect(json).to.have.property("item_description");
+          pm.expect(json).to.have.property("item_price");
+          pm.expect(json).to.have.property("item_image");
+      });
+
+      pm.test("item_name matches the sent value", function () {
+          const json = pm.response.json();
+          pm.expect(json.item_name).to.eql("Burger");
+      });
+
+      pm.test("item_price matches the sent value", function () {
+          const json = pm.response.json();
+          pm.expect(String(json.item_price)).to.eql("11.99");
+      });
+
+      pm.test("Response time is under 2000ms", function () {
+          pm.expect(pm.response.responseTime).to.be.below(2000);
+      });
+    language: text/javascript

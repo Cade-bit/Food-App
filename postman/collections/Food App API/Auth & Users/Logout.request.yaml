@@ -1,0 +1,6 @@
+$kind: http-request
+name: Logout
+order: 3000
+method: GET
+url: '{{base_url}}/logout/'
+description: 'Log out the currently authenticated user.'

@@ -1,0 +1,4 @@
+$kind: collection
+name: Food Items API
+description: 'REST API endpoints for managing food items (powered by Django REST Framework).'
+order: 1000

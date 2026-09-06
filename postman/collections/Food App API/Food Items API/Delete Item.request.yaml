@@ -1,0 +1,6 @@
+$kind: http-request
+name: Delete Item
+order: 6000
+method: DELETE
+url: '{{base_url}}/food/api/items/{{item_id}}/'
+description: 'Soft-delete a food item by its ID. Requires authentication.'

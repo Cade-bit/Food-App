@@ -1,0 +1,35 @@
+$kind: http-request
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Status code is 201", function () {
+          pm.response.to.have.status(201);
+      });
+
+      pm.test("Response time is less than 1000ms", function () {
+          pm.expect(pm.response.responseTime).to.be.below(1000);
+      });
+
+      pm.test("Response has valid JSON body", function () {
+          pm.response.to.be.json;
+      });
+
+      pm.test("Response contains expected fields", function () {
+          const jsonData = pm.response.json();
+          pm.expect(jsonData).to.have.property("id");
+          pm.expect(jsonData).to.have.property("item_name");
+          pm.expect(jsonData).to.have.property("item_price");
+      });
+order: 2000
+method: POST
+url: "{{base_url}}/food/api/items/"
+description: Create a new food item. Requires authentication.
+body:
+  type: json
+  content: |-
+    {
+            "item_name": "Hot Dog added by postman client",
+            "item_description": "Long Hot Dog",
+            "item_price": "10.25",
+            "item_image": "https://www.allrecipes.com/thmb/nk0oa_NelH_k7GPqCGrMTqj8g7M=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/238509-coney-island-dogs-ddmfs-3x4_9476-b80e723764d3437e8fa7fd89f010432a.jpg"
+        }

@@ -1,0 +1,13 @@
+$kind: http-request
+name: Login
+order: 2000
+method: POST
+url: '{{base_url}}/login/'
+description: 'Log in with username and password.'
+body:
+  type: urlencoded
+  content:
+    - key: username
+      value: john_doe
+    - key: password
+      value: securepassword123

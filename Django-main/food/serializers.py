@@ -7,8 +7,3 @@ class ItemSerializer(serializers.ModelSerializer):
         fields = ["id", "item_name", "item_description", "item_price", "item_image"]
 
 
-class BulkDeleteSerializer(serializers.ModelSerializer):
-    ids = serializers.ListField(
-        child=serializers.IntegerField(),
-        allow_empty=False
-    )

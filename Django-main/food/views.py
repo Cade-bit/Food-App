@@ -2,6 +2,7 @@ from django.db.migrations import serializer
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from rest_framework import status
+from rest_framework.authentication import TokenAuthentication
 
 from .models import Item
 from django.template import loader
@@ -12,11 +13,18 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView
 from django.http import JsonResponse
-from .serializers import ItemSerializer, BulkDeleteSerializer
+from .serializers import ItemSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework.views import APIView
 from rest_framework import generics
+from rest_framework import viewsets
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
+from .permissions import IsOwnerOrReadOnly
+from rest_framework.authentication import TokenAuthentication
+from rest_framework_simplejwt.authentication import JWTAuthentication
+
+# Other permissions that can be used are: IsAdminUser. IsAuthenticated, DjangoModelPermissions
 
 
 # Create your views here.
@@ -28,13 +36,21 @@ from rest_framework import generics
     }
     return render(request, 'food/index.html', context)'''
 
-class ItemRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+class ItemViewSet(viewsets.ModelViewSet):
     queryset = Item.objects.all()
     serializer_class = ItemSerializer
+    # authentication_classes = [TokenAuthentication]
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsOwnerOrReadOnly]
 
-class ItemListCreateAPI(generics.ListCreateAPIView):
-    queryset = Item.objects.all()
-    serializer_class = ItemSerializer
+
+# class ItemRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+#     queryset = Item.objects.all()
+#     serializer_class = ItemSerializer
+#
+# class ItemListCreateAPI(generics.ListCreateAPIView):
+#     queryset = Item.objects.all()
+#     serializer_class = ItemSerializer
 
 
 # class ItemListAPIView(APIView):

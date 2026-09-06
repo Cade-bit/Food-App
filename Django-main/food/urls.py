@@ -1,13 +1,23 @@
 from . import views
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from rest_framework_simplejwt.views import TokenRefreshView, TokenObtainPairView
+
+from .views import ItemViewSet
+
+router = DefaultRouter()
+router.register(r'items', views.ItemViewSet, basename='item')
 
 
 app_name = 'food'
 urlpatterns = [
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/', include(router.urls)),
     # URL pattern of API built with DRF
-    path('api/items', views.ItemListCreateAPI.as_view(), name='item_list_api'),
+    # path('api/items', views.ItemListCreateAPI.as_view(), name='item_list_api'),
     # URL pattern for single item
-    path('api/items/<int:pk>', views.ItemRetrieveUpdateDestroyAPIView.as_view(), name='item_detail_api'),
+    # path('api/items/<int:pk>', views.ItemRetrieveUpdateDestroyAPIView.as_view(), name='item_detail_api'),
     # URL Patterns of Django App
     #/food/ ----> This is the index page
     path('', views.IndexClassView.as_view(), name='index'),

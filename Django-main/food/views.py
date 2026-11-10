@@ -23,18 +23,34 @@ from rest_framework.permissions import IsAuthenticatedOrReadOnly
 from .permissions import IsOwnerOrReadOnly
 from rest_framework.authentication import TokenAuthentication
 from rest_framework_simplejwt.authentication import JWTAuthentication
+from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from django.views.decorators.cache import cache_page, never_cache
+from django.views.decorators.vary import vary_on_headers
+import logging
 
 # Other permissions that can be used are: IsAdminUser. IsAuthenticated, DjangoModelPermissions
 
+logger = logging.getLogger(__name__)
 
 # Create your views here.
 #----------------------------> Creating view for index page
-'''def index(request):
+''' The following code implements separate caching based on the device the user is using 
+@cache_page(60*15)
+@vary_on_headers('User-Agent')
+'''
+# @cache_page(60*15)
+def index(request):
     item_list = Item.objects.all()
+    # Pagination
+    paginator = Paginator(item_list, 10)
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+
     context = {
         'item_list': item_list,
+        'page_obj': page_obj,
     }
-    return render(request, 'food/index.html', context)'''
+    return render(request, 'food/index.html', context)
 
 class ItemViewSet(viewsets.ModelViewSet):
     queryset = Item.objects.all()
@@ -125,10 +141,12 @@ class ItemViewSet(viewsets.ModelViewSet):
 
 
 
-class IndexClassView(ListView):
-    model = Item
-    template_name = 'food/index.html'
-    context_object_name = 'item_list'
+# class IndexClassView(ListView):
+#     logger.info("Fetching all items from the database")
+#     logger.debug(f"Found {Item.objects.count()} items in the database")
+#     model = Item
+#     template_name = 'food/index.html'
+#     context_object_name = 'item_list'
 
 #------------------> Creating view for the details page
 '''def item(request):
@@ -142,8 +160,11 @@ def detail(request, item_id):
     return render(request, 'food/details.html', context)'''
 
 class FoodDetail(DetailView):
+    logger.info(f"Fetching an item with the ID: {id} ")
     model = Item
+    logger.debug(f"Item found {Item.item_name} ({Item.item_price})")
     template_name = 'food/details.html'
+    context_object_name = 'item'
 
 #------------------------> Add new item
 '''def create_item(request):
@@ -187,7 +208,7 @@ def delete_item(request, item_id):
     return render(request, 'food/item-delete.html', {'item':item})
 
 
-def get_objcets(request):
+def get_objects(request):
     for item in Item.objects.all():
         print(item.item_name)
 

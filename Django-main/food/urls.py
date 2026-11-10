@@ -2,6 +2,7 @@ from . import views
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
 from rest_framework_simplejwt.views import TokenRefreshView, TokenObtainPairView
+from django.views.decorators.cache import cache_page, never_cache
 
 from .views import ItemViewSet
 
@@ -20,7 +21,10 @@ urlpatterns = [
     # path('api/items/<int:pk>', views.ItemRetrieveUpdateDestroyAPIView.as_view(), name='item_detail_api'),
     # URL Patterns of Django App
     #/food/ ----> This is the index page
-    path('', views.IndexClassView.as_view(), name='index'),
+    # The bottom line of code is caching the url
+    # path('', cache_page(60*15) (views.index), name='index'),
+    # End
+    path('', views.index, name='index'),
     #/food/(id of item) -----> This is the details page
     path('<int:pk>/', views.FoodDetail.as_view(), name='detail'),
     path('item/', views.FoodDetail.as_view(), name='item'),

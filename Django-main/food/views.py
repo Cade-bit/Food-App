@@ -3,6 +3,7 @@ from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from rest_framework import status
 from rest_framework.authentication import TokenAuthentication
+from rest_framework.throttling import UserRateThrottle
 
 from .models import Item
 from django.template import loader
@@ -26,6 +27,9 @@ from rest_framework_simplejwt.authentication import JWTAuthentication
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.views.decorators.cache import cache_page, never_cache
 from django.views.decorators.vary import vary_on_headers
+from django_filters.rest_framework import DjangoFilterBackend
+from rest_framework.filters import SearchFilter, OrderingFilter
+from rest_framework.throttling import UserRateThrottle, AnonRateThrottle
 import logging
 
 # Other permissions that can be used are: IsAdminUser. IsAuthenticated, DjangoModelPermissions
@@ -58,6 +62,14 @@ class ItemViewSet(viewsets.ModelViewSet):
     # authentication_classes = [TokenAuthentication]
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsOwnerOrReadOnly]
+    filter_backends = [DjangoFilterBackend, OrderingFilter, SearchFilter, ]
+    filterset_fields = ['item_name', 'item_price']
+    ordering_fields = ['item_name', 'item_price']
+    search_fields = ['item_name', 'item_description']
+    throttle_classes = [UserRateThrottle, AnonRateThrottle]
+
+    def perform_create(self, serializer):
+        serializer.save(user_name=self.request.user)
 
 
 # class ItemRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):

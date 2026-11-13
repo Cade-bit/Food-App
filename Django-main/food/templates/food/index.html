@@ -3,7 +3,7 @@
 
 {% block body %}
 {% load cache %}
-{% cache 900 page_obj %}
+<!-- {% cache 900 page_obj %} -->
 {% for item in page_obj %}
   <div class="row">
     <div class="col-md-3 offset-md-2">
@@ -30,7 +30,7 @@
     
   </div> ----->
   {% endfor %}
-  {% endcache %}
+  <!-- {% endcache %} -->
   <!-- Pagination menu -->
   <div>
     {% if page_obj.has_previous %}

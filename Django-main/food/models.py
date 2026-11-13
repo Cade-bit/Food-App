@@ -10,7 +10,10 @@ class Item(models.Model):
     item_name = models.CharField(max_length=200, db_index=True)
     item_description = models.CharField(max_length=200)
     item_price = models.DecimalField(max_digits=10,decimal_places=2, db_index=True)
-    item_image = models.CharField(max_length=500, default="https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png")
+    item_image = models.CharField(max_length=500, default="https://www.thefuzzyduck.co.uk/wp-content/uploads/2024/05/image-coming-soon-placeholder-01-660x660.png", blank=True, null=True)
+    is_active = models.BooleanField(default=True)
+    is_deleted = models.BooleanField(default=False)
+    upload_image = models.ImageField(upload_to='itetm_images/', blank=True, null=True)
 
     is_deleted = models.BooleanField(default=False) # soft delete flag
     deleted_at = models.DateTimeField(blank=True, null=True)

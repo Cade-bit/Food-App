@@ -212,3 +212,248 @@ Fetching an item with the ID: <built-in function id>
 Item found <django.db.models.query_utils.DeferredAttribute object at 0x00000240455D15E0> (<django.db.models.query_utils.DeferredAttribute object at 0x00000240455D1680>)
 Not Found: /
 Not Found: /
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000022CB1121400> (<django.db.models.query_utils.DeferredAttribute object at 0x0000022CB11214A0>)
+Not Found: /
+Not Found: /favicon.ico
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002F0583714F0> (<django.db.models.query_utils.DeferredAttribute object at 0x000002F058371590>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x00000213E25214F0> (<django.db.models.query_utils.DeferredAttribute object at 0x00000213E2521590>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x00000234E21114F0> (<django.db.models.query_utils.DeferredAttribute object at 0x00000234E2111590>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001BBDE4014F0> (<django.db.models.query_utils.DeferredAttribute object at 0x000001BBDE401590>)
+Internal Server Error: /food/api/token
+Traceback (most recent call last):
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/food/api/token/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+Method Not Allowed: /food/api/token/
+Internal Server Error: /food/api/token
+Traceback (most recent call last):
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\utils\deprecation.py", line 311, in __call__
+    response = self.process_response(request, response)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\middleware\common.py", line 109, in process_response
+    self.get_full_path_with_slash(request)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\middleware\common.py", line 87, in get_full_path_with_slash
+    raise RuntimeError(
+    ...<9 lines>...
+    )
+RuntimeError: You called this URL via POST, but the URL doesn't end in a slash and you have APPEND_SLASH set. Django can't redirect to the slash URL while maintaining POST data. Change your form to point to 127.0.0.1:8000/food/api/token/ (note the trailing slash), or set APPEND_SLASH=False in your Django settings.
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\practice\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002113DAF14F0> (<django.db.models.query_utils.DeferredAttribute object at 0x000002113DAF1590>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\practice\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001D796D913B0> (<django.db.models.query_utils.DeferredAttribute object at 0x000001D796D91450>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\practice\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001D1948D1450> (<django.db.models.query_utils.DeferredAttribute object at 0x000001D1948D14F0>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\practice\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000027744A014F0> (<django.db.models.query_utils.DeferredAttribute object at 0x0000027744A01590>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\practice\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000024CC1FF14A0> (<django.db.models.query_utils.DeferredAttribute object at 0x0000024CC1FF1540>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\practice\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001EC001014A0> (<django.db.models.query_utils.DeferredAttribute object at 0x000001EC00101540>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\practice\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000029B3851E580> (<django.db.models.query_utils.DeferredAttribute object at 0x0000029B3851E620>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\practice\settings.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002709DE5E620> (<django.db.models.query_utils.DeferredAttribute object at 0x000002709DE5E6C0>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000025B6B48E580> (<django.db.models.query_utils.DeferredAttribute object at 0x0000025B6B48E620>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000018C7CC3E580> (<django.db.models.query_utils.DeferredAttribute object at 0x0000018C7CC3E620>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001F5C774E620> (<django.db.models.query_utils.DeferredAttribute object at 0x000001F5C774E6C0>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000024D3018E620> (<django.db.models.query_utils.DeferredAttribute object at 0x0000024D3018E6C0>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001D91ADCE580> (<django.db.models.query_utils.DeferredAttribute object at 0x000001D91ADCE620>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002199369E530> (<django.db.models.query_utils.DeferredAttribute object at 0x000002199369E5D0>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002561C18E5D0> (<django.db.models.query_utils.DeferredAttribute object at 0x000002561C18E670>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001DCD1B7E620> (<django.db.models.query_utils.DeferredAttribute object at 0x000001DCD1B7E6C0>)
+Unauthorized: /food/api/items/
+Bad Request: /food/api/items/
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\practice\settings.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000022011E0E5D0> (<django.db.models.query_utils.DeferredAttribute object at 0x0000022011E0E670>)
+Too Many Requests: /food/api/items/
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002357123E620> (<django.db.models.query_utils.DeferredAttribute object at 0x000002357123E6C0>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\models.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000023CB487E5D0> (<django.db.models.query_utils.DeferredAttribute object at 0x0000023CB487E670>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\models.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000014CB38BE580> (<django.db.models.query_utils.DeferredAttribute object at 0x0000014CB38BE620>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\models.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001626B67E760> (<django.db.models.query_utils.DeferredAttribute object at 0x000001626B67E800>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\models.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001815245E760> (<django.db.models.query_utils.DeferredAttribute object at 0x000001815245E800>)
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001C924C7E6C0> (<django.db.models.query_utils.DeferredAttribute object at 0x000001C924C7E760>)
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001210BA4E670> (<django.db.models.query_utils.DeferredAttribute object at 0x000001210BA4E710>)
+Importing JpegImagePlugin
+tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 74 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 82 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+tag: ExifIFD (34665) - type: long (4) - value: b'Z\x00\x00\x00'
+Importing AvifImagePlugin
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+Not Found: /
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002667581E670> (<django.db.models.query_utils.DeferredAttribute object at 0x000002667581E710>)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002A3A28BE6C0> (<django.db.models.query_utils.DeferredAttribute object at 0x000002A3A28BE760>)
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /.well-known/appspecific/com.chrome.devtools.json
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000024C5954E620> (<django.db.models.query_utils.DeferredAttribute object at 0x0000024C5954E6C0>)
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000027964D6E620> (<django.db.models.query_utils.DeferredAttribute object at 0x0000027964D6E6C0>)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico

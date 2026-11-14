@@ -2,9 +2,9 @@
 {% block title %}Home - FoodApp{% endblock %}
 
 {% block body %}
-{% load cache %}
+<!-- {% load cache %} -->
 <!-- {% cache 900 page_obj %} -->
-{% for item in page_obj %}
+{% for item in item_list %}
   <div class="row">
     <div class="col-md-3 offset-md-2">
       <img src="{{ item.item_image }}" alt="{{ item.item_name }}" class="card custom-img"/>
@@ -19,17 +19,15 @@
       <a href="{% url 'food:detail' item.id %}" class="btn btn-success" role="button">See Details</a>
     </div>
   </div>
-  <div>
-  </div>
   <!-- <div class = "item-list"> 
     <ul>
-      <li> 
-        <a href="{% url 'food:detail' item.id %}"> {{ item.id }} -- {{item.item_name}}</a>
-      </li>
+        <li> 
+          <a href="{% url 'food:detail' item.id %}"> {{ item.id }} -- {{item.item_name}}</a>
+        </li>
     </ul>
     
-  </div> ----->
-  {% endfor %}
+</div> ----->
+{% endfor %}
   <!-- {% endcache %} -->
   <!-- Pagination menu -->
   <div>

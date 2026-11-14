@@ -68,13 +68,13 @@ class ItemViewSet(viewsets.ModelViewSet):
     search_fields = ['item_name', 'item_description']
     throttle_classes = [UserRateThrottle, AnonRateThrottle]
 
-    def perform_create(self, serializer):
-        serializer.save(user_name=self.request.user)
+    # def perform_create(self, serializer):
+    #     serializer.save(user_name=self.request.user)
 
 
-# class ItemRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
-#     queryset = Item.objects.all()
-#     serializer_class = ItemSerializer
+class ItemRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Item.objects.all()
+    serializer_class = ItemSerializer
 #
 # class ItemListCreateAPI(generics.ListCreateAPIView):
 #     queryset = Item.objects.all()
@@ -93,32 +93,32 @@ class ItemViewSet(viewsets.ModelViewSet):
 #             return Response(serializer.data)
 
 
-# class ItemDetailAPIView(APIView):
-#     def get_object(self, pk):
-#         try:
-#             return Item.objects.get(pk=pk)
-#         except Item.DoesNotExist:
-#             return None
-#     def get(self, request, pk):
-#         item = self.get_object(pk)
-#         if not item:
-#             return Response({"Error": "Item not found"})
-#         serializer = ItemSerializer(item)
-#         return Response(serializer.data)
-#     def put(self, request, pk):
-#         item = self.get_object(pk)
-#         if not item:
-#             return Response({"Error": "Item not found"})
-#         serializer = ItemSerializer(item, data=request.data)
-#         if serializer.is_valid():
-#             serializer.save()
-#             return Response(serializer.data)
-#     def delete(self, request, pk):
-#         item = self.get_object(pk)
-#         if not item:
-#             return Response({"Error": "Item not found"})
-#         item.delete()
-#         return Response({"message": "Item deleted"})
+class ItemDetailAPIView(APIView):
+    def get_object(self, pk):
+        try:
+            return Item.objects.get(pk=pk)
+        except Item.DoesNotExist:
+            return None
+    def get(self, request, pk):
+        item = self.get_object(pk)
+        if not item:
+            return Response({"Error": "Item not found"})
+        serializer = ItemSerializer(item)
+        return Response(serializer.data)
+    def put(self, request, pk):
+        item = self.get_object(pk)
+        if not item:
+            return Response({"Error": "Item not found"})
+        serializer = ItemSerializer(item, data=request.data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data)
+    def delete(self, request, pk):
+        item = self.get_object(pk)
+        if not item:
+            return Response({"Error": "Item not found"})
+        item.delete()
+        return Response({"message": "Item deleted"})
 
 
 

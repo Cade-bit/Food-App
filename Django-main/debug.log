@@ -457,3 +457,368 @@ Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002796
 Not Found: /favicon.ico
 Not Found: /favicon.ico
 Not Found: /favicon.ico
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000020E346DE670> (<django.db.models.query_utils.DeferredAttribute object at 0x0000020E346DE710>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001D8ADC3E620> (<django.db.models.query_utils.DeferredAttribute object at 0x000001D8ADC3E6C0>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002222E09E6C0> (<django.db.models.query_utils.DeferredAttribute object at 0x000002222E09E760>)
+Not Found: /favicon.ico
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000015D2340E670> (<django.db.models.query_utils.DeferredAttribute object at 0x0000015D2340E710>)
+Not Found: /api
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\models.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002070156E710> (<django.db.models.query_utils.DeferredAttribute object at 0x000002070156E7B0>)
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002203A0CE670> (<django.db.models.query_utils.DeferredAttribute object at 0x000002203A0CE710>)
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000021ED808E6C0> (<django.db.models.query_utils.DeferredAttribute object at 0x0000021ED808E760>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\urls.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000020752A9E5D0> (<django.db.models.query_utils.DeferredAttribute object at 0x0000020752A9E670>)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\models.py changed, reloading.
+Watching for file changes with StatReloader
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\models.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x00000277AF49E710> (<django.db.models.query_utils.DeferredAttribute object at 0x00000277AF49E7B0>)
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002287C90E5D0> (<django.db.models.query_utils.DeferredAttribute object at 0x000002287C90E670>)
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x00000281707EE6C0> (<django.db.models.query_utils.DeferredAttribute object at 0x00000281707EE760>)
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\models.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000016653A0E580> (<django.db.models.query_utils.DeferredAttribute object at 0x0000016653A0E620>)
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x00000224C66BE670> (<django.db.models.query_utils.DeferredAttribute object at 0x00000224C66BE710>)
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x00000195F93AE5D0> (<django.db.models.query_utils.DeferredAttribute object at 0x00000195F93AE670>)
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\forms.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001BA61F54A50> (<django.db.models.query_utils.DeferredAttribute object at 0x000001BA625AE710>)
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x00000230C23EE5D0> (<django.db.models.query_utils.DeferredAttribute object at 0x00000230C23EE670>)
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000029C2F02E6C0> (<django.db.models.query_utils.DeferredAttribute object at 0x0000029C2F02E760>)
+Importing JpegImagePlugin
+tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 74 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 82 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+tag: ExifIFD (34665) - type: long (4) - value: b'Z\x00\x00\x00'
+Importing AvifImagePlugin
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+Internal Server Error: /food/api/items/
+Traceback (most recent call last):
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\views.py", line 526, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\views.py", line 474, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\views.py", line 485, in raise_uncaught_exception
+    raise exc
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py", line 72, in perform_create
+    serializer.save(user_name=self.request.user)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\serializers.py", line 208, in save
+    self.instance = self.create(validated_data)
+                    ~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\serializers.py", line 1008, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\db\models\query.py", line 667, in create
+    obj = self.model(**kwargs)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\db\models\base.py", line 566, in __init__
+    _setattr(self, field.name, rel_obj)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 287, in __set__
+    raise ValueError(
+    ...<7 lines>...
+    )
+ValueError: Cannot assign "<django.contrib.auth.models.AnonymousUser object at 0x000001BA62E8F110>": "Item.user_name" must be a "User" instance.
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001E4BAFA4A50> (<django.db.models.query_utils.DeferredAttribute object at 0x000001E4BB5FE670>)
+Importing JpegImagePlugin
+tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 74 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 82 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+tag: ExifIFD (34665) - type: long (4) - value: b'Z\x00\x00\x00'
+Importing AvifImagePlugin
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+Internal Server Error: /food/api/items/
+Traceback (most recent call last):
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\request.py", line 426, in __getattr__
+    return getattr(_request, attr)
+AttributeError: 'WSGIRequest' object has no attribute 'User'. Did you mean: 'user'?
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\core\handlers\base.py", line 198, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\viewsets.py", line 124, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\views.py", line 526, in dispatch
+    response = self.handle_exception(exc)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\views.py", line 474, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\views.py", line 485, in raise_uncaught_exception
+    raise exc
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\views.py", line 523, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\mixins.py", line 19, in create
+    self.perform_create(serializer)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py", line 72, in perform_create
+    serializer.save(user_name=self.request.User)
+                              ^^^^^^^^^^^^^^^^^
+  File "D:\Projects_for_practice\Websites\Django\Food App\.venv\Lib\site-packages\rest_framework\request.py", line 428, in __getattr__
+    raise AttributeError(f"'{self.__class__.__name__}' object has no attribute '{attr}'")
+AttributeError: 'Request' object has no attribute 'User'. Did you mean: 'user'?
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\views.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000002046B16E670> (<django.db.models.query_utils.DeferredAttribute object at 0x000002046B16E710>)
+Importing JpegImagePlugin
+tag: Orientation (274) - type: short (3) - value: b'\x01\x00'
+tag: XResolution (282) - type: rational (5) Tag Location: 34 - Data Location: 74 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+tag: YResolution (283) - type: rational (5) Tag Location: 46 - Data Location: 82 - value: b'H\x00\x00\x00\x01\x00\x00\x00'
+tag: ResolutionUnit (296) - type: short (3) - value: b'\x02\x00'
+tag: ExifIFD (34665) - type: long (4) - value: b'Z\x00\x00\x00'
+Importing AvifImagePlugin
+Importing BlpImagePlugin
+Importing BmpImagePlugin
+Importing BufrStubImagePlugin
+Importing CurImagePlugin
+Importing DcxImagePlugin
+Importing DdsImagePlugin
+Importing EpsImagePlugin
+Importing FitsImagePlugin
+Importing FliImagePlugin
+Importing FpxImagePlugin
+Image: failed to import FpxImagePlugin: No module named 'olefile'
+Importing FtexImagePlugin
+Importing GbrImagePlugin
+Importing GifImagePlugin
+Importing GribStubImagePlugin
+Importing Hdf5StubImagePlugin
+Importing IcnsImagePlugin
+Importing IcoImagePlugin
+Importing ImImagePlugin
+Importing ImtImagePlugin
+Importing IptcImagePlugin
+Importing JpegImagePlugin
+Importing Jpeg2KImagePlugin
+Importing McIdasImagePlugin
+Importing MicImagePlugin
+Image: failed to import MicImagePlugin: No module named 'olefile'
+Importing MpegImagePlugin
+Importing MpoImagePlugin
+Importing MspImagePlugin
+Importing PalmImagePlugin
+Importing PcdImagePlugin
+Importing PcxImagePlugin
+Importing PdfImagePlugin
+Importing PixarImagePlugin
+Importing PngImagePlugin
+Importing PpmImagePlugin
+Importing PsdImagePlugin
+Importing QoiImagePlugin
+Importing SgiImagePlugin
+Importing SpiderImagePlugin
+Importing SunImagePlugin
+Importing TgaImagePlugin
+Importing TiffImagePlugin
+Importing WebPImagePlugin
+Importing WmfImagePlugin
+Importing XbmImagePlugin
+Importing XpmImagePlugin
+Importing XVThumbImagePlugin
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /
+D:\Projects_for_practice\Websites\Django\Food App\Django-main\food\models.py changed, reloading.
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000029A0AB3E620> (<django.db.models.query_utils.DeferredAttribute object at 0x0000029A0AB3E6C0>)
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x000001E211BAE670> (<django.db.models.query_utils.DeferredAttribute object at 0x000001E211BAE710>)
+Watching for file changes with StatReloader
+Fetching an item with the ID: <built-in function id> 
+Item found <django.db.models.query_utils.DeferredAttribute object at 0x0000019F7E23E580> (<django.db.models.query_utils.DeferredAttribute object at 0x0000019F7E23E620>)

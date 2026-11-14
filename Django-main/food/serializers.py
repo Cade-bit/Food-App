@@ -11,7 +11,7 @@ class ItemSerializer(serializers.ModelSerializer):
     user_name= UserSerializer(read_only=True)
     class Meta:
         model = Item
-        fields = ["id", "user_name", "item_name", "item_description", "item_price", "item_image"]
+        fields = ["id", "user_name", "item_name", "item_description", "item_price", "upload_image"]
 
     def validate_item_price(self, value):
         if value < 0:
